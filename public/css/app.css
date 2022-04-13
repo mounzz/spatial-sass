@@ -11178,6 +11178,29 @@ header .texteHeader .btn-pink {
   border-radius: 0.3rem;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+  }
+  nav .titre {
+    display: none;
+  }
+  nav .menu {
+    display: flex;
+    flex-direction: column;
+    color: #aaaaaa;
+    align-items: center;
+  }
+
+  .texteHeader {
+    width: 100%;
+  }
+  .texteHeader .stitre {
+    display: none;
+  }
+}
 body {
   font-family: sans-serif;
 }
@@ -11211,6 +11234,32 @@ body {
   width: 50%;
   color: #aaaaaa;
   font-weight: 200;
+}
+
+.containerIntro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.containerIntro .gauche {
+  align-items: center;
+}
+.containerIntro .gauche h1, .containerIntro .gauche .h1 {
+  text-align: center;
+}
+.containerIntro .gauche .stitre {
+  text-align: center;
+  width: 100%;
+}
+.containerIntro .droite {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerIntro .droite p {
+  width: 90%;
+  text-align: center;
 }
 
 .containerFusce {
@@ -11268,6 +11317,16 @@ body {
   background-color: #323037;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .containerFusce .containerCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerFusce .containerCard .card-1 img, .containerFusce .containerCard .card-2 img {
+    width: 100%;
+    box-shadow: none;
+  }
+}
 .containerMauris {
   display: flex;
   flex-direction: column;
@@ -11422,10 +11481,13 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .containerCard {
+  .copyright p {
     display: flex;
     flex-direction: column;
-    background-color: red;
+    align-items: center;
+  }
+  .copyright p span {
+    border: none !important;
   }
 }
 
