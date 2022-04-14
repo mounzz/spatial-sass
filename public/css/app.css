@@ -11196,6 +11196,8 @@ header .texteHeader .btn-pink {
 
   .texteHeader {
     width: 100%;
+    gap: 1rem;
+    height: 420px !important;
   }
   .texteHeader .stitre {
     display: none;
@@ -11234,32 +11236,6 @@ body {
   width: 50%;
   color: #aaaaaa;
   font-weight: 200;
-}
-
-.containerIntro {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.containerIntro .gauche {
-  align-items: center;
-}
-.containerIntro .gauche h1, .containerIntro .gauche .h1 {
-  text-align: center;
-}
-.containerIntro .gauche .stitre {
-  text-align: center;
-  width: 100%;
-}
-.containerIntro .droite {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.containerIntro .droite p {
-  width: 90%;
-  text-align: center;
 }
 
 .containerFusce {
@@ -11317,16 +11293,6 @@ body {
   background-color: #323037;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .containerFusce .containerCard {
-    display: flex;
-    flex-direction: column;
-  }
-  .containerFusce .containerCard .card-1 img, .containerFusce .containerCard .card-2 img {
-    width: 100%;
-    box-shadow: none;
-  }
-}
 .containerMauris {
   display: flex;
   flex-direction: column;
@@ -11445,6 +11411,11 @@ body {
   border-radius: 0.3rem;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .texteLigula {
+    text-align: center;
+  }
+}
 .containerFtr {
   background-color: #f6f6f6;
 }
@@ -11488,6 +11459,177 @@ body {
   }
   .copyright p span {
     border: none !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .containerIntro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerIntro .gauche {
+    align-items: center;
+  }
+  .containerIntro .gauche h1, .containerIntro .gauche .h1 {
+    text-align: center;
+  }
+  .containerIntro .gauche .stitre {
+    text-align: center;
+    width: 100%;
+  }
+  .containerIntro .droite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerIntro .droite p {
+    width: 90%;
+    text-align: center;
+  }
+
+  .containerFusce h1, .containerFusce .h1 {
+    text-align: center;
+  }
+  .containerFusce .stitre {
+    text-align: center;
+  }
+  .containerFusce .containerCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerFusce .containerCard .card-1, .containerFusce .containerCard .card-2 {
+    box-shadow: none;
+  }
+  .containerFusce .containerCard .card-1 img, .containerFusce .containerCard .card-2 img {
+    width: 100%;
+  }
+  .containerFusce .containerButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerMauris {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 0;
+  }
+  .containerMauris h1, .containerMauris .h1 {
+    text-align: center;
+  }
+  .containerMauris .stitre {
+    text-align: center;
+  }
+  .containerMauris .containerQuatre {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerMauris .containerQuatre .cercleGauche {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerMauris .containerQuatre .cercleGauche .texteGauche {
+    align-items: center;
+  }
+  .containerMauris .containerQuatre .cercleGauche .texteGauche p {
+    text-align: center;
+    width: 95%;
+  }
+  .containerMauris .containerQuatre .cercleDroite {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerMauris .containerQuatre .cercleDroite .texteDroite {
+    align-items: center;
+  }
+  .containerMauris .containerQuatre .cercleDroite .texteDroite p {
+    text-align: center;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .containerIntro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerIntro .gauche {
+    align-items: center;
+  }
+  .containerIntro .gauche h1, .containerIntro .gauche .h1 {
+    text-align: center;
+  }
+  .containerIntro .gauche .stitre {
+    text-align: center;
+    width: 100%;
+  }
+  .containerIntro .droite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .containerIntro .droite p {
+    width: 90%;
+    text-align: center;
+  }
+
+  .containerFusce h1, .containerFusce .h1 {
+    text-align: center;
+  }
+  .containerFusce .stitre {
+    text-align: center;
+  }
+  .containerFusce .containerCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerFusce .containerCard .card-1, .containerFusce .containerCard .card-2 {
+    box-shadow: none;
+  }
+  .containerFusce .containerCard .card-1 img, .containerFusce .containerCard .card-2 img {
+    width: 100%;
+  }
+
+  .containerMauris {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 0;
+  }
+  .containerMauris h1, .containerMauris .h1 {
+    text-align: center;
+  }
+  .containerMauris .stitre {
+    text-align: center;
+  }
+  .containerMauris .containerQuatre {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerMauris .containerQuatre .cercleGauche {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerMauris .containerQuatre .cercleGauche .texteGauche {
+    align-items: center;
+  }
+  .containerMauris .containerQuatre .cercleGauche .texteGauche p {
+    text-align: center;
+    width: 95%;
+  }
+  .containerMauris .containerQuatre .cercleDroite {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerMauris .containerQuatre .cercleDroite .texteDroite {
+    align-items: center;
+  }
+  .containerMauris .containerQuatre .cercleDroite .texteDroite p {
+    text-align: center;
+    width: 95%;
   }
 }
 
